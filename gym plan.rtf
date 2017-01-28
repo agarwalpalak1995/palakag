@@ -1,0 +1,702 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf760
+{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red170\green13\blue145;\red0\green0\blue0;\red92\green38\blue153;
+\red63\green110\blue116;\red46\green13\blue110;\red196\green26\blue22;\red28\green0\blue207;\red0\green116\blue0;
+\red38\green71\blue75;}
+{\*\expandedcolortbl;;\csgenericrgb\c66500\c5200\c56900;\csgenericrgb\c0\c0\c0;\csgenericrgb\c35900\c14900\c60100;
+\csgenericrgb\c24700\c43100\c45600;\csgenericrgb\c18100\c5200\c43100;\csgenericrgb\c77000\c10200\c8600;\csgenericrgb\c11000\c0\c81000;\csgenericrgb\c0\c45600\c0;
+\csgenericrgb\c14900\c27800\c29400;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab543
+\pard\tx543\pardeftab543\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 import\cf3  UIKit\
+\cf2 protocol\cf3  gym\
+    \
+\{\
+    \
+    \
+    \cf2 func\cf3  workoutSchedule(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+    \
+    \cf2 func\cf3  enrollment(noMonths: \cf4 Int\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+    \
+    \cf2 func\cf3  dietPlan()\
+    \
+\}\
+\cf2 class\cf3  fitness : \cf5 gym\cf3 \
+    \
+\{\
+    \
+    \cf2 var\cf3  age:\cf4 Int\cf3 \
+    \cf2 var\cf3  wt:\cf4 Int\cf3 \
+    \cf2 var\cf3  ht:\cf4 Float\cf3 \
+    \cf2 var\cf3  sex:\cf4 String\cf3 \
+    \cf2 var\cf3  name:\cf4 String\cf3 \
+    \cf2 var\cf3  proof:\cf4 String\cf3 \
+    \
+    \cf2 init\cf3 (age: \cf4 Int\cf3 , wt: \cf4 Int\cf3 , ht: \cf4 Float\cf3 , sex: \cf4 String\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+        \
+    \{\
+        \
+        \cf2 self\cf3 .\cf5 age\cf3  = age\
+        \
+        \cf2 self\cf3 .\cf5 wt\cf3  = wt\
+        \
+        \cf2 self\cf3 .\cf5 ht\cf3  = ht\
+        \
+        \cf2 self\cf3 .\cf5 sex\cf3  = sex\
+        \
+        \cf2 self\cf3 .\cf5 name\cf3 =name\
+        \
+        \cf2 self\cf3 .\cf5 proof\cf3 =proof\
+        \
+    \}\
+    \
+    \cf2 func\cf3  workoutSchedule(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+        \
+    \{\
+        \
+        \cf2 if\cf3  sex\cf6 ==\cf7 "Male"\cf3 \
+            \
+        \{\
+            \
+            \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 75\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "abb workout 3 set of 15 wraps each"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "twister for 3 to 5 mins"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "tredmill 20  mins minimum"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "half leg race on alternate days of 3 set"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "sits up on declined table"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "body charger 15 mins"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "cycle for 10 to 12 mins"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "body massager for 5 to 10 mins once a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "side bands 3 set"\cf3 )\
+                \
+            \}\
+            \
+            \
+        \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 75\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "abb workout 2 set of 10 wraps each"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "twister for 2 mins"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "tredmill for 8 to 10 mins"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "body charger for 5 mins"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "leg race 2 sets on alternate days"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "body charger for 5 to 8 mins"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "cycle for 5 to 8 mins"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "body massager thrice in a week"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "side bands 2 set"\cf3 )\
+            \
+        \}\
+        \}\
+    \
+\
+\
+\cf2 else\cf3 \
+    \{\
+        \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 60\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "abb workout 3 set of 15 wraps each"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "twister for 2 to 4 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "tredmill 12  mins minimum"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "half leg race on alternate days of 3 set"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "sits up on declined table"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "body charger 10 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "cycle for 10  mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "body massager for 5 to 10 mins once a week"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "side bands 3 set"\cf3 )\
+        \
+    \}\
+        \
+    \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 65\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "abb workout 1 set of 10 wraps each"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "twister for 2 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "tredmill for 8 to 10 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "body charger for 5 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "leg race 1 sets on alternate days"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "body charger for 5 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "cycle for 5 to 6 mins"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "body massager thrice in a week"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "side bands 2 set"\cf3 )\
+        \
+    \}\
+    \
+    \
+    \
+\}\
+\
+\}\
+\
+\cf2 func\cf3  enrollment(noMonths: \cf4 Int\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+    \
+\{\
+    \
+    \cf2 if\cf3  noMonths==\cf8 1\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "monthly basis and fees is Rs.1500"\cf3 )\
+        \
+    \}\
+        \
+    \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 3\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "quaterly basis and fees is Rs.4000"\cf3 )\
+        \
+    \}\
+        \
+    \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 6\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "half yearly basis and fees is Rs.6600"\cf3 )\
+        \
+    \}\
+        \
+    \cf2 else\cf3  \cf2 if\cf3  noMonths>\cf8 6\cf3  \cf6 &&\cf3  noMonths<=\cf8 12\cf3 \
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "yearly basis and fees is Rs.\cf3 \\\cf7 (\cf3 noMonths*\cf8 1000\cf7 )"\cf3 )\
+        \
+    \}\
+    \
+\}\
+\
+\cf2 func\cf3  dietPlan()\
+    \
+\{\
+    \
+    \cf6 print\cf3 (\cf7 "morning:green tea or lemon water"\cf3 )\
+    \
+    \cf6 print\cf3 (\cf7 "breakfast one chapati or one prantha and one glass milk with no sugar"\cf3 )\
+    \
+    \cf6 print\cf3 (\cf7 "bruch one glass of juice"\cf3 )\
+    \
+    \cf6 print\cf3 (\cf7 "lunch 2 chapati without butter or ghee"\cf3 )\
+    \
+    \cf6 print\cf3 (\cf7 "supper same as lunch"\cf3 )\
+    \
+\}\
+\
+\
+\}\
+\
+\cf2 class\cf3  bodyBuilding : \cf5 gym\cf3 \
+    \
+\{\
+    \
+    \cf2 var\cf3  age:\cf4 Int\cf3 \
+    \cf2 var\cf3  wt:\cf4 Int\cf3 \
+    \cf2 var\cf3  ht:\cf4 Float\cf3 \
+    \cf2 var\cf3  sex:\cf4 String\cf3 \
+    \cf2 var\cf3  name:\cf4 String\cf3 \
+    \cf2 var\cf3  proof:\cf4 String\cf3 \
+    \cf2 init\cf3 (age: \cf4 Int\cf3 , wt: \cf4 Int\cf3 , ht: \cf4 Float\cf3 , sex: \cf4 String\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+        \
+    \{\
+        \
+        \cf2 self\cf3 .\cf5 age\cf3  = age\
+        \
+        \cf2 self\cf3 .\cf5 wt\cf3  = wt\
+        \
+        \cf2 self\cf3 .\cf5 ht\cf3  = ht\
+        \
+        \cf2 self\cf3 .\cf5 sex\cf3  = sex\
+        \
+        \cf2 self\cf3 .\cf5 name\cf3 =name\
+        \
+        \cf2 self\cf3 .\cf5 proof\cf3 =proof\
+        \
+    \}\
+    \
+    \cf2 func\cf3  workoutSchedule(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+        \
+    \{\
+        \
+        \cf2 if\cf3  sex\cf6 ==\cf7 "Male"\cf3 \
+            \
+        \{\
+            \
+            \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 75\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "for bicep and triceps 3 set alternate days"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for chest 3 set thrice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "shoulder 3 set thrice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "abs 3 sets twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "collar 3 sets twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for v shape 3 sets"\cf3 )\
+                \
+                \
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 75\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "for bicep and triceps 2 set alternate days"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for chest 2 set twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "shoulder 2 set twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "abs 2 sets once in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "collar 2 sets once in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for v shape 3 sets once in a week"\cf3 )\
+                \
+            \}\
+            \
+        \}\
+            \
+        \cf2 else\cf3 \
+            \
+        \{\
+            \
+            \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 60\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "for bicep and triceps 2 set alternate days"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for chest 2 set twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "shoulder 2 set twice in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "abs 2 sets once in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "collar 2 sets once in a week"\cf3 )\
+                \
+                \cf6 print\cf3 (\cf7 "for v shape 1set once in a week"\cf3 )\
+                \
+            \}\
+            \
+            \
+            \
+        \}\
+        \
+    \}\
+    \
+    \cf2 func\cf3  enrollment(noMonths: \cf4 Int\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+        \
+    \{\
+        \
+        \
+        \
+        \cf2 if\cf3  noMonths==\cf8 1\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "monthly basis and fees is Rs.1500"\cf3 )\
+            \
+        \}\
+            \
+        \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 3\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "quaterly basis and fees is Rs.4000"\cf3 )\
+            \
+        \}\
+            \
+        \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 6\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "half yearly basis and fees is Rs.6600"\cf3 )\
+            \
+        \}\
+            \
+        \cf2 else\cf3  \cf2 if\cf3  noMonths>\cf8 6\cf3  \cf6 &&\cf3  noMonths<=\cf8 12\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "yearly basis and fees is Rs.\cf3 \\\cf7 (\cf3 noMonths*\cf8 1000\cf7 )"\cf3 )\
+            \
+        \}\
+        \
+    \}\
+    \
+    \cf2 func\cf3  dietPlan()\
+        \
+    \{\
+        \
+        \cf6 print\cf3 (\cf7 "morning:green tea or lemon water"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "breakfast one chapati or one prantha and one glass milk with no sugar"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "bruch one glass of juice"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "lunch 2 chapati without butter or ghee"\cf3 )\
+        \
+        \cf6 print\cf3 (\cf7 "supper same as lunch"\cf3 )\
+        \
+    \}\
+    \
+    \cf2 func\cf3  limit(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+        \
+    \{ \cf2 if\cf3  sex\cf6 ==\cf7 "Male"\cf3 \
+        \
+    \{\
+        \
+        \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 70\cf3  \cf6 &&\cf3  ht>\cf8 170\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "max wt lifting 50"\cf3 )\
+            \
+        \}\
+            \
+        \cf2 else\cf3  \cf2 if\cf3 (age>\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 70\cf3  \cf6 &&\cf3  ht>\cf8 170\cf3 )\
+        \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "max wt limit is 40 kg"\cf3 )\
+            \
+        \}\
+        \
+    \}\
+        \
+    \cf2 else\cf3 \
+        \
+    \{\
+        \
+        \cf2 if\cf3  age<\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 55\cf3  \cf6 &&\cf3  ht>\cf8 155\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "max wt limit is 16 kg"\cf3 )\
+            \
+        \}\
+            \
+        \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3  \cf6 &&\cf3  wt>\cf8 70\cf3  \cf6 &&\cf3  ht>\cf8 155\cf3 \
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "max wt limit is 12 kg"\cf3 )\
+            \
+        \}\
+        \
+        \} \
+        \
+    \}\
+\}\
+    \cf2 class\cf3  spaPool : \cf5 gym\cf3 \
+        \
+    \{\
+        \cf9 /*internal func enrollment(noMonths: Int, name: String, proof: String) \{\
+            <#code#>\
+        \}*/\cf3 \
+\
+        \
+        \cf2 var\cf3  age:\cf4 Int\cf3 \
+         \cf2 var\cf3  wt:\cf4 Int\cf3 \
+        \cf2 var\cf3  ht:\cf4 Float\cf3 \
+        \cf2 var\cf3  sex:\cf4 String\cf3 \
+        \cf2 var\cf3  name:\cf4 String\cf3 \
+        \cf2 var\cf3  proof:\cf4 String\cf3 \
+        \cf2 init\cf3 (age: \cf4 Int\cf3 , wt: \cf4 Int\cf3 , ht: \cf4 Float\cf3 , sex: \cf4 String\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf2 self\cf3 .\cf5 age\cf3  = age\
+            \
+            \cf2 self\cf3 .\cf5 wt\cf3  = wt\
+            \
+            \cf2 self\cf3 .\cf5 ht\cf3  = ht\
+            \
+            \cf2 self\cf3 .\cf5 sex\cf3  = sex\
+            \
+            \cf2 self\cf3 .\cf5 name\cf3 =name\
+            \
+            \cf2 self\cf3 .\cf5 proof\cf3 =proof\
+            \
+        \}\
+        \cf2 func\cf3  workoutSchedule(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf2 if\cf3  sex\cf6 ==\cf7 "Male"\cf3 \
+                \
+            \{\
+                \
+                \cf2 if\cf3  age<\cf8 40\cf3 \
+                    \
+                \{\
+                    \
+                    \cf6 print\cf3 (\cf7 "swim not for more than 2hour"\cf3 )\
+                    \
+                \}\
+                    \
+                \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3 \
+                    \
+                \{\
+                    \
+                    \cf6 print\cf3 (\cf7 "swim not for more than an hour"\cf3 )\
+                    \
+                \}\
+                \
+            \}\
+                \
+            \cf2 else\cf3 \
+                \
+            \{\
+                \
+                \cf2 if\cf3  age<\cf8 40\cf3 \
+                    \
+                \{\
+                    \
+                    \cf6 print\cf3 (\cf7 "swim not for more than 1.5 hr"\cf3 )\
+                    \
+                \}\
+                    \
+                \cf2 else\cf3  \cf2 if\cf3  age>\cf8 40\cf3 \
+                    \
+                \{\
+                    \
+                    \cf6 print\cf3 (\cf7 "swim not for more than an hour"\cf3 )\
+                    \
+                \}\
+                \
+            \}\
+            \
+        \}\
+        \
+        \cf2 func\cf3  enrollment(noMonths:\cf4 Int\cf3 , name:\cf4 String\cf3 , proof:\cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf2 if\cf3  noMonths==\cf8 1\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "monthly basis and fees is Rs.1000"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 3\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "quaterly basis and fees is Rs.2700"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 6\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "half yearly basis and fees is Rs.5000"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths>\cf8 6\cf3  \cf6 &&\cf3  noMonths<=\cf8 12\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "yearly basis and fees is Rs.\cf3 \\\cf7 (\cf3 noMonths*\cf8 800\cf7 )"\cf3 )\
+                \
+            \}\
+            \
+        \}\
+        \
+        \cf2 func\cf3  dietPlan()\
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "morning:green tea or lemon water"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "breakfast one chapati or one prantha and one glass milk with no sugar"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "bruch one glass of juice"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "lunch 2 chapati without butter or ghee"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "supper same as lunch"\cf3 )\
+            \
+        \}\
+        \
+    \}\
+    \
+    \cf2 class\cf3  Yoga : \cf5 gym\cf3 \
+        \
+    \{\
+        \cf2 var\cf3  age:\cf4 Int\cf3 \
+        \cf2 var\cf3  wt:\cf4 Int\cf3 \
+        \cf2 var\cf3  ht:\cf4 Float\cf3 \
+        \cf2 var\cf3  sex:\cf4 String\cf3 \
+        \cf2 var\cf3  name:\cf4 String\cf3 \
+        \cf2 var\cf3  proof:\cf4 String\cf3 \
+        \cf2 init\cf3 (age: \cf4 Int\cf3 , wt: \cf4 Int\cf3 , ht: \cf4 Float\cf3 , sex: \cf4 String\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf2 self\cf3 .\cf5 age\cf3  = age\
+            \
+            \cf2 self\cf3 .\cf5 wt\cf3  = wt\
+            \
+            \cf2 self\cf3 .\cf5 ht\cf3  = ht\
+            \
+            \cf2 self\cf3 .\cf5 sex\cf3  = sex\
+            \
+            \cf2 self\cf3 .\cf5 name\cf3 =name\
+            \
+            \cf2 self\cf3 .\cf5 proof\cf3 =proof\
+            \
+        \}\
+\
+        \cf9 /*internal func workoutSchedule(age: Int, wt: Int, ht: Float, sex: String) \{\
+            <#code#>\
+        \}*/\cf3 \
+\
+        \
+        \cf2 func\cf3  workoutSchedule(age:\cf4 Int\cf3 , wt:\cf4 Int\cf3 , ht:\cf4 Float\cf3 , sex:\cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "vajar aasan"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "nom vilom"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "kapal bhati"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "butterfly"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "dandasan"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "anantasan"\cf3 )\
+            \
+        \}\
+        \
+        \cf2 func\cf3  enrollment(noMonths: \cf4 Int\cf3 , name: \cf4 String\cf3 , proof: \cf4 String\cf3 )\
+            \
+        \{\
+            \
+            \cf2 if\cf3  noMonths==\cf8 1\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "monthly basis and fees is Rs.800"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 3\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "quaterly basis and fees is Rs.2100"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths==\cf8 6\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "half yearly basis and fees is Rs.3000"\cf3 )\
+                \
+            \}\
+                \
+            \cf2 else\cf3  \cf2 if\cf3  noMonths>\cf8 6\cf3  \cf6 &&\cf3  noMonths<=\cf8 12\cf3 \
+                \
+            \{\
+                \
+                \cf6 print\cf3 (\cf7 "yearly basis and fees is Rs.\cf3 \\\cf7 (\cf3 noMonths*\cf8 650\cf7 )"\cf3 )\
+                \
+            \}  \
+            \
+        \}\
+        \
+        \cf2 func\cf3  dietPlan()\
+            \
+        \{\
+            \
+            \cf6 print\cf3 (\cf7 "morning:green tea or lemon water"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "breakfast one chapati or one prantha and one glass milk with no sugar"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "brunch one glass of juice"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "lunch 2 chapati without butter or ghee"\cf3 )\
+            \
+            \cf6 print\cf3 (\cf7 "supper same as lunch"\cf3 )\
+            \
+        \}\
+        \
+    \}\
+\
+\
+        \
+      \cf2 var\cf3  rizyan=\cf5 fitness\cf3 (age:\cf8 20\cf3 , wt:\cf8 70\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "Male"\cf3 , name: \cf7 "Rizyan"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  hrehan=\cf5 bodyBuilding\cf3 (age:\cf8 19\cf3 , wt:\cf8 70\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "Male"\cf3 , name: \cf7 "Hrehan"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  saransh=\cf5 Yoga\cf3 (age:\cf8 20\cf3 , wt:\cf8 75\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "Male"\cf3 , name:\cf7 "saransh"\cf3 , proof:\cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  sonali=\cf5 spaPool\cf3 (age:\cf8 21\cf3 , wt:\cf8 60\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "female"\cf3 , name: \cf7 "sonali"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  surat=\cf5 fitness\cf3 (age:\cf8 22\cf3 , wt:\cf8 70\cf3 , ht:\cf8 1150\cf3 , sex:\cf7 "Male"\cf3 , name: \cf7 "surat"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  simar=\cf5 bodyBuilding\cf3 (age:\cf8 21\cf3 , wt:\cf8 70\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "female"\cf3 , name: \cf7 "simar"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \
+        \cf2 var\cf3  tnaya=\cf5 Yoga\cf3 (age:\cf8 19\cf3 , wt:\cf8 70\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "female"\cf3 , name: \cf7 "tnaya"\cf3 , proof: \cf7 "Uid"\cf3 )\
+        \cf6 print\cf3 (\cf7 "---------------------------------------------------------------------"\cf3 )\
+        \cf6 print\cf3 (\cf7 "************---------DIET PLAN--------***************"\cf3 )\
+        \cf5 rizyan\cf3 .\cf10 dietPlan\cf3 ()\
+        \cf6 print\cf3 (\cf7 "---------------------------------------------------------------------"\cf3 )\
+        \cf6 print\cf3 (\cf7 "************---------DIET PLAN--------***************"\cf3 )\
+        \cf5 sonali\cf3 .\cf10 dietPlan\cf3 ()\
+        \cf6 print\cf3 (\cf7 "---------------------------------------------------------------------"\cf3 )\
+        \cf6 print\cf3 (\cf7 "************---------WORKOUT SCHEDULE--------***************"\cf3 )\
+        \cf5 sonali\cf3 .\cf10 workoutSchedule\cf3 (age:\cf8 21\cf3 , wt:\cf8 60\cf3 , ht:\cf8 160\cf3 , sex:\cf7 "Female"\cf3 )}
